@@ -1,0 +1,18 @@
+
+webserver:
+  port: 8025
+  cors: []
+  adminUser: admin
+  adminPassword: HIDDEN
+
+pingers:
+  - targetHost: "8.8.8.8"
+    retries: 5
+    retryAfterSeconds: 60
+    pingTimeoutSeconds: 5
+    upMessage: "Google DNS is up"
+    downMessage: "Google DNS is down"
+
+notifications:
+  - pushoverAppToken: HIDDEN
+    pushoverReceiverTokens: HIDDEN
