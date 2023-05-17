@@ -37,7 +37,7 @@ class Pinger(val pingerConfig: AppConfigPinger): KoinComponent {
                 logger.info("Pinger state changed to: $storedReachableState")
 
             }
-            Thread.sleep(60000)
+            Thread.sleep(pingerConfig.sleepSeconds * 1000L)
         }
     }
 

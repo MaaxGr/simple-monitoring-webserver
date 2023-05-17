@@ -17,6 +17,7 @@ data class AppConfigPinger(
     val retries: Int,
     val retryAfterSeconds: Int,
     val pingTimeoutSeconds: Int,
+    val sleepSeconds: Int,
     val upMessage: String,
     val downMessage: String
 )
